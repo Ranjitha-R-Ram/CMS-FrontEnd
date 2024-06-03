@@ -1,0 +1,122 @@
+.navbar {
+	height: 80px;
+	width: 100%;
+	background: primary;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	font-size: 1.2rem;
+}
+
+.nav-logo {
+	text-decoration: none;
+	color: white;
+}
+
+.nav-links {
+	display: grid;
+	grid-template-columns: repeat(6, auto);
+	grid-gap: 20px;
+	list-style: none;
+}
+
+.nav-link {
+	text-decoration: none;
+	color: white;
+	transition: 0.3s all;
+}
+
+.nav-link:hover {
+	color: yellow;
+}
+
+.nav-icon {
+	display: none;
+	font-size: 2rem;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 500px) {
+	.navbar {
+		position: relative;
+	}
+
+	.nav-links {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		text-align: center;
+		width: 100%;
+		top: 80px;
+		left: -100%;
+		transition: 0.5s all;
+	}
+
+	.nav-links.active {
+		background: blue;
+		left: 0;
+	}
+
+	.nav-item {
+		padding: 10px 0;
+		border-top: 1px solid red;
+		border-bottom: 1px solid red;
+	}
+
+	.nav-icon {
+		display: flex;
+	}
+}
+
+.text{
+	text-decoration: none;
+}
+.carousel-indicators [data-bs-target] {
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+}
+.app {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	font-family: Arial, sans-serif;
+  }
+  
+  .package {
+	width: 30%;
+	margin-bottom: 2rem;
+	padding: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .package h2 {
+	margin-top: 0;
+  }
+  
+  .package input,
+  .package button {
+	width: 100%;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1rem;
+  }
+  
+  .package p {
+	margin: 0.5rem 0;
+  }
+  
+  @media (max-width: 768px) {
+   .package {
+	  width: 100%;
+	}
+  }
+  .text-doc{
+	text-decoration: none;
+  }
